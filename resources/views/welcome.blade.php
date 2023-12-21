@@ -344,7 +344,7 @@
 
         <table class="table-top">
           <caption>
-            Hasil Pengiraan (RM)
+            Dividen Bulanan (RM)
           </caption>
           <thead>
             <tr>
