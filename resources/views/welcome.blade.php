@@ -145,7 +145,7 @@
               background-color: #6699cc;
               color: #FFF;
               font-weight: bold;
-              padding: 2px 11px;
+              padding: 2px 9px;
             }
             .result {
               background: #fff;
