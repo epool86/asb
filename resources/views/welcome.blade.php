@@ -45,7 +45,7 @@
             }
             .table-top th,
             .table-top td {
-              padding: .5em;
+              padding: .4em;
               text-align: center;
             }
 
