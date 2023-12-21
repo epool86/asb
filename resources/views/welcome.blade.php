@@ -344,7 +344,7 @@
 
         <table class="table-top">
           <caption>
-            Hasil Pengiraan
+            Hasil Pengiraan (RM)
           </caption>
           <thead>
             <tr>
@@ -504,7 +504,7 @@
 
         <table class="table-summary">
           <caption>
-            Keseluruhan
+            Keseluruhan (RM)
           </caption>
           <thead>
             <tr>
