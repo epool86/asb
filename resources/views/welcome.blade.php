@@ -153,7 +153,7 @@
               height: 30px;
               border-radius: 10px;
               border: 0px;
-              font-size: 18px;
+              font-size: 16px;
               padding: 2px 2px;
               background-color: transparent;
               color: #336699;
@@ -167,12 +167,20 @@
               height: 30px;
               border-radius: 10px;
               border: 0px;
-              font-size: 18px;
+              font-size: 16px;
               padding: 2px 2px;
               background-color: transparent;
               color: #336699;
               font-weight: bold;
               text-align: center;
+            }
+
+            .green {
+                color: #32a162 !important;
+            }
+
+            .red {
+                color: #b53535 !important;
             }
 
             @media screen and (max-width: 600px) {
@@ -227,8 +235,6 @@
                 border-bottom: 0;
               }
             }
-
-            /* general styling */
             body {
                 font-family: "Open Sans", sans-serif;
                 line-height: 1.25;
@@ -253,14 +259,14 @@
               <td data-label="Bulan">Januari</td>
               <td data-label="Baki Minimum">
                 <input type="text" class="prefix" class="input" value="RM" readonly>
-                <input type="number" class="input" id="month_1" value="" placeholder="0.00" onkeyup="calculate()">
+                <input type="text" class="input" id="month_1" value="" placeholder="0.00" onkeyup="calculate()">
               </td>
             </tr>
             <tr>
               <td data-label="Bulan">Febuari</td>
               <td data-label="Baki Minimum">
                 <input type="text" class="prefix" class="input" value="RM" readonly>
-                <input type="number" class="input" id="month_2" value="" placeholder="0.00" onkeyup="calculate()">
+                <input type="text" class="input" id="month_2" value="" placeholder="0.00" onkeyup="calculate()">
               </td>
             </tr>
             <tr>
@@ -502,6 +508,7 @@
           </caption>
           <thead>
             <tr>
+              <th class="header" scope="col" style="background-color: #336699; text-align: center;"></th>
               <th class="header" scope="col" style="background-color: #336699; text-align: center;">2022</th>
               <th class="header" scope="col" style="background-color: #336699; text-align: center;">2023</th>
               <th class="header" scope="col" style="background-color: #336699; text-align: center;">(+/-)</th>
@@ -509,6 +516,9 @@
           </thead>
           <tbody>
             <tr>
+              <td data-label="" style="background-color: #e3f2fa; text-align:center;">
+                Jumlah
+              </td>
               <td data-label="2022" style="background-color: #e3f2fa; text-align:center;">
                 <input type="text" class="result_summary" id="result_summary_1" value="0.00" readonly>
               </td>
@@ -524,7 +534,7 @@
 
         <div class="footer">
             <br>
-            Follow me on <a href="https://facebook.com/asbahri" target="_blank">Facebook</a><br>
+            By <a href="https://facebook.com/asbahri" target="_blank">Facebook</a><br>
             Source code: <a href="https://github.com/epool86/asb" target="_blank">My Github</a>
 
             <br><br>
@@ -535,7 +545,72 @@
             
             function calculate(){
 
-                alert('haha');
+                var data = [];
+                var total_2022 = 0;
+                var total_2023 = 0;
+
+                for(i = 1; i <= 12; i++){
+
+                    var val = document.getElementById('month_'+i).value ? document.getElementById('month_'+i).value : 0;
+
+                    if(isNaN(val)){
+                        val = 0;
+                    }
+
+                    bonus_dividen_2022 = 0;
+                    normal_dividen_2022 = 0;
+                    total_dividen_2022 = 0;
+
+                    total_dividen_2023 = 0;
+
+                    //calculate 2022
+                    if(val <= 30000){
+                        total_dividen_2022 = val * 5.1 / 100 / 12;
+                    } else {
+                        bonus_dividen_2022 = 30000 * 5.1 / 100 / 12;
+                        normal_dividen_2022 = (val - 30000) * 4.6 / 100 / 12;
+                        total_dividen_2022 = bonus_dividen_2022 + normal_dividen_2022; 
+                    }
+                    total_2022 = (total_2022 * 1) + total_dividen_2022 * 1;
+
+                    //calculate 2023
+                    total_dividen_2023 = val * 5.25 / 100 / 12;
+                    total_2023 = (total_2023 * 1) + total_dividen_2023 * 1;
+
+                    document.getElementById("result_"+i+"_1").value = total_dividen_2022.toFixed(2);
+                    document.getElementById("result_"+i+"_2").value = total_dividen_2023.toFixed(2);
+
+                    different = total_dividen_2023.toFixed(2) - total_dividen_2022.toFixed(2);
+
+                    if(different >= 0){
+                        document.getElementById("result_"+i+"_diff").value = "+"+different.toFixed(2);
+                        document.getElementById("result_"+i+"_diff").classList.remove("red");
+                        document.getElementById("result_"+i+"_diff").classList.add("green");
+                    } else {
+                        document.getElementById("result_"+i+"_diff").value = "-"+different.toFixed(2);
+                        document.getElementById("result_"+i+"_diff").classList.remove("green");
+                        document.getElementById("result_"+i+"_diff").classList.add("red");
+                    }
+                    
+
+                }
+
+                console.log(total_2022);
+
+                document.getElementById("result_summary_1").value = (total_2022 * 1).toFixed(2);
+                document.getElementById("result_summary_2").value = (total_2023 * 1).toFixed(2);
+
+                different =  (total_2023*1).toFixed(2) - (total_2022*1).toFixed(2);
+
+                if(different >= 0){
+                    document.getElementById("result_summary_diff").value = "+"+different.toFixed(2);
+                    document.getElementById("result_summary_diff").classList.remove("red");
+                    document.getElementById("result_summary_diff").classList.add("green");
+                } else {
+                    document.getElementById("result_summary_diff").value = "-"+different.toFixed(2);
+                    document.getElementById("result_summary_diff").classList.remove("green");
+                    document.getElementById("result_summary_diff").classList.add("red");
+                }
 
             }
 
