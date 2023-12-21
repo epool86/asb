@@ -534,7 +534,7 @@
 
         <div class="footer">
             <br>
-            By <a href="https://facebook.com/asbahri" target="_blank">Facebook</a><br>
+            By <a href="https://facebook.com/asbahri" target="_blank">Ahmad Saiful Bahri</a><br>
             Source code: <a href="https://github.com/epool86/asb" target="_blank">My Github</a>
 
             <br><br>
