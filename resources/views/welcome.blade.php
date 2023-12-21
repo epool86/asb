@@ -145,7 +145,7 @@
               background-color: #6699cc;
               color: #FFF;
               font-weight: bold;
-              padding: 2px 9px;
+              padding: 2px 0px 2px 9px;
             }
             .result {
               background: #fff;
@@ -253,42 +253,42 @@
               <td data-label="Bulan">Januari</td>
               <td data-label="Baki Minimum">
                 <input type="text" class="prefix" class="input" value="RM" readonly>
-                <input type="text" class="input" id="month_1" value="" placeholder="0.00" onkeyup="calculate()">
+                <input type="number" class="input" id="month_1" value="" placeholder="0.00" onkeyup="calculate()">
               </td>
             </tr>
             <tr>
               <td data-label="Bulan">Febuari</td>
               <td data-label="Baki Minimum">
                 <input type="text" class="prefix" class="input" value="RM" readonly>
-                <input type="text" class="input" id="month_2" value="" placeholder="0.00" onkeyup="calculate()">
+                <input type="number" class="input" id="month_2" value="" placeholder="0.00" onkeyup="calculate()">
               </td>
             </tr>
             <tr>
               <td data-label="Bulan">March</td>
               <td data-label="Baki Minimum">
                 <input type="text" class="prefix" class="input" value="RM" readonly>
-                <input type="text" class="input" id="month_3" value="" placeholder="0.00" onkeyup="calculate()">
+                <input type="number" class="input" id="month_3" value="" placeholder="0.00" onkeyup="calculate()">
               </td>
             </tr>
             <tr>
               <td data-label="Bulan">April</td>
               <td data-label="Baki Minimum">
                 <input type="text" class="prefix" class="input" value="RM" readonly>
-                <input type="text" class="input" id="month_4" value="" placeholder="0.00" onkeyup="calculate()">
+                <input type="number" class="input" id="month_4" value="" placeholder="0.00" onkeyup="calculate()">
               </td>
             </tr>
             <tr>
               <td data-label="Bulan">Mei</td>
               <td data-label="Baki Minimum">
                 <input type="text" class="prefix" class="input" value="RM" readonly>
-                <input type="text" class="input" id="month_5" value="" placeholder="0.00" onkeyup="calculate()">
+                <input type="number" class="input" id="month_5" value="" placeholder="0.00" onkeyup="calculate()">
               </td>
             </tr>
             <tr>
               <td data-label="Bulan">Jun</td>
               <td data-label="Baki Minimum">
                 <input type="text" class="prefix" class="input" value="RM" readonly>
-                <input type="text" class="input" id="month_6" value="" placeholder="0.00" onkeyup="calculate()">
+                <input type="number" class="input" id="month_6" value="" placeholder="0.00" onkeyup="calculate()">
               </td>
             </tr>
             <tr>
@@ -302,35 +302,35 @@
               <td data-label="Bulan">Ogos</td>
               <td data-label="Baki Minimum">
                 <input type="text" class="prefix" class="input" value="RM" readonly>
-                <input type="text" class="input" id="month_8" value="" placeholder="0.00" onkeyup="calculate()">
+                <input type="number" class="input" id="month_8" value="" placeholder="0.00" onkeyup="calculate()">
               </td>
             </tr>
             <tr>
               <td data-label="Bulan">September</td>
               <td data-label="Baki Minimum">
                 <input type="text" class="prefix" class="input" value="RM" readonly>
-                <input type="text" class="input" id="month_9" value="" placeholder="0.00" onkeyup="calculate()">
+                <input type="number" class="input" id="month_9" value="" placeholder="0.00" onkeyup="calculate()">
               </td>
             </tr>
             <tr>
               <td data-label="Bulan">Oktober</td>
               <td data-label="Baki Minimum">
                 <input type="text" class="prefix" class="input" value="RM" readonly>
-                <input type="text" class="input" id="month_10" value="" placeholder="0.00" onkeyup="calculate()">
+                <input type="number" class="input" id="month_10" value="" placeholder="0.00" onkeyup="calculate()">
               </td>
             </tr>
             <tr>
               <td data-label="Bulan">November</td>
               <td data-label="Baki Minimum">
                 <input type="text" class="prefix" class="input" value="RM" readonly>
-                <input type="text" class="input" id="month_11" value="" placeholder="0.00" onkeyup="calculate()">
+                <input type="number" class="input" id="month_11" value="" placeholder="0.00" onkeyup="calculate()">
               </td>
             </tr>
             <tr>
               <td data-label="Bulan">Disember</td>
               <td data-label="Baki Minimum">
                 <input type="text" class="prefix" class="input" value="RM" readonly>
-                <input type="text" class="input" id="month_12" value="" placeholder="0.00" onkeyup="calculate()">
+                <input type="number" class="input" id="month_12" value="" placeholder="0.00" onkeyup="calculate()">
               </td>
             </tr>
           </tbody>
