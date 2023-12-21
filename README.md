@@ -4,10 +4,10 @@ Kalkulator ringkas pengiraan dividen ASB bagi tahun 2022 dan 2023, juga memapark
 
 Sebarang pertanyaan, pembetulan/kesilapan, atau maklumbalas boleh hubungi saya
 
-- [Ahmad Saiful Bahri](https://facebook.com/asbahri).
+- [Ahmad Saiful Bahri](https://facebook.com/asbahri)
 
 Atau terus ke laman web saya
 
-- [Azbahri.my](https://azbahri.my).
+- [Azbahri.my](https://azbahri.my)
 
 Terima kasih.
