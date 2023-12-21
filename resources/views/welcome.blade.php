@@ -301,7 +301,7 @@
               <td data-label="Bulan">Julai</td>
               <td data-label="Baki Minimum">
                 <input type="text" class="prefix" class="input" value="RM" readonly>
-                <input type="text" class="input" id="month_7" value="" placeholder="0.00" onkeyup="calculate()">
+                <input type="number" class="input" id="month_7" value="" placeholder="0.00" onkeyup="calculate()">
               </td>
             </tr>
             <tr>
