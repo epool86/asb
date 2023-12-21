@@ -14,4 +14,4 @@ Atau terus ke laman web saya
 
 - [Azbahri.my](https://azbahri.my)
 
-Terima kasih.
+Anda dibenarkan untuk menyalin, menggunakan, mengubahsuai kod ini. Sila letak credit :-)
