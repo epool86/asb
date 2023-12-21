@@ -127,17 +127,16 @@
             }
             .input {
               background: #fff;
-              width: 100px;
+              width: 85px;
               height: 30px;
               border: 1px solid #DDD;
               border-radius: 0px 10px 10px 0px;
               font-size: 15px;
-              
               padding: 2px 10px;
             }
             .prefix {
               left: 5px;
-              width: 50px;
+              width: 45px;
               height: 30px;
               border: none;
               border: 1px solid #6699cc;
